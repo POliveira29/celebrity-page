@@ -1,0 +1,281 @@
+/* State
+   ----------------------------- */
+
+.notices__page-item--active{
+    color: #d4d4d4;
+}
+
+
+
+/* Media Queries
+   ----------------------------- */
+
+@media only screen and (min-width: 768px){
+    .hero {
+        margin-top: 0;
+        height: 450px;
+        background: linear-gradient(rgba(0,0,0,0.5),rgb(119 170 212 / 0.3)),url(/src/images/hero-desktop.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    .hero::after{
+        content: "";
+        width: 420px;
+        height: 390px;
+        position: absolute;
+        left: -5em;
+        margin-top: 3.7em;
+        background: none;
+        background-color: var(--color-secondary);
+        transform: skew(-20deg);
+        -webkit-transform: skew(-20deg);
+        -moz-transform: skew(20deg);
+        -o-transform: skew(20deg);
+        overflow: hidden;
+        z-index: 0;
+    }
+    .hero__content{
+        margin-left: 0.5em;
+      }
+    .header{
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        background-color: transparent;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__navbar {
+        position: relative;
+        width: 65%;
+        height: 60px;
+        overflow: visible;
+    }
+    .header__logo,
+    .header__search{
+        display: flex;
+    }
+    .navbar__list {
+        flex-wrap: nowrap;
+        width: 50%;
+        height: 100%;
+        background-color: transparent;
+    }
+    .navbar__link {
+        margin: 0;
+    }
+    .navbar__item{
+        padding: 1.2rem;
+        font-size: 1rem;
+        color: #fff;
+    }
+    .search-input {
+        border-color: #fff;
+        color: #fff;
+        background-color: transparent;
+    }
+    .header--bgcolor{
+        background-color: #fff;
+    }
+    .navbar__item--color{
+        color: #77aad4;
+    }
+    .header--input{
+        border-color: #000;
+        color: #000;
+    }
+    .wrapper {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .card-secondary {
+        width: auto;
+    }
+    .card-secondary__banner {
+        width: 300px;
+        height: auto;
+    }
+    .card-secondary__content {
+        width: 215px;
+        height: 350px
+    }
+    .card-secondary__title {
+        margin-top: 1rem;
+    }
+    .about__content {
+        position: relative;
+        width: 100%;
+        min-height: 500px;
+        flex-direction: row;
+        text-align: center;
+        color: #fff;
+    }
+    .about__banner {
+        position: relative;
+        left: 10%;
+        z-index: 1;
+    }
+    .about__beforename {
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        font-size: 1.4rem;
+        opacity: 1;
+        color: #484f54;
+    }
+    .about__text {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        text-align: left;
+        bottom: 115px;
+        width: 65%;
+        background-color: var(--color-secondary);
+    }
+    .about__name{
+        margin-top: 0;
+        width: 80%;
+        font-size: 2.6rem;
+    }
+    .about__name::before{
+        content: "My name is:";
+        position: absolute;
+        bottom: 100%;
+        text-transform: uppercase;
+        font-family: var(--font-text); 
+        font-style: normal;
+        font-size: 1.4rem;
+        color: #484f54
+    }
+    .about__description{
+        width: 80%;
+    }
+    .l-row{
+        width: 230px;
+    }
+    .main {
+        position: relative;
+        padding-bottom: 12em;
+    }
+    .main--secondary::before {
+        content: "";
+        width: 100%;
+        height: 65%;
+        left: 0;
+        top: 30em;
+        position: absolute;
+        overflow: hidden;
+        background-color: #fff;
+        z-index: 0;
+    }
+    .resume {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10em;
+    }
+    .career{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 90px;
+        background-color: var(--color-secondary);
+        bottom: 4em;
+        border-radius: 0 0 50% 50% / 0 0 1.75em 1.75em;
+        transform: rotate(180deg);
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .container {
+        width: 95%;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box-text {
+        width: 65%;
+    }
+    .resume__title {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .resume__description {
+        width: 100%;
+    }
+    .home-notices {
+        align-items: flex-end;
+        margin-right: 1.6em;
+    }
+    .wrapper {
+        position: relative;
+        justify-content: space-between;
+        width: 45%;
+    }
+    .card-secondary {
+        width: 210px;
+    }
+    .card-secondary__banner {
+        width: 100%;
+        height: auto;
+    }
+    .card-secondary__content {
+        width: 150px;
+        height: 250px;
+    }
+    .card-terciary {
+        width: 51%;
+        top: 7.25em;
+        left: 0;
+        position: absolute;
+    }
+    .card-terciary__link:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        height: 30%;
+        background: linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.0) );
+    }
+    .card__content {
+        background-color: transparent;
+        position: absolute;
+        bottom: 0px;
+        height: 25%;
+        color: #fff;
+    }
+    .card__description {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .card-secondary {
+        width: auto;
+    }
+    .card-secondary__content {
+        width: 230px;
+        height: 370px;
+    }
+    .card-terciary {
+        width: 55%;
+    }
+    .card__title {
+        font-size: 2rem;
+    }
+}
