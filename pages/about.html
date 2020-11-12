@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Document Title. Page Title less than 55 character -->
+    <title>Amber Williams</title>
+    <!-- Meta Description -->
+    <meta name="description"
+        content="Aqui deve ser colocado a descrição da página. Essa descrição ira aparecer na pesquisa do buscador. Uma meta description otimizada contém entre 120 e 130 caracteres e vai direto ao ponto." />
+    <!-- Basicamente são atalhos para que o Googlebot atue com maior precisão e velocidade sobre uma página na web. Por exemplo, para facilitar a indexação de uma página, usa-se o comando “index”. -->
+    <meta name="robots" content="index">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/src/images/favicons/favicon-32x32.png">
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.9.0/css/lightgallery.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/src/styles/base/normalize.css">
+    <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="stylesheet" href="/src/styles/layout/layout.css">
+    <link rel="stylesheet" href="/src/styles/about.css">
+    <link rel="stylesheet" href="/src/styles/state/state.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <button class="header__menu">
+                <span class="hamburguer"></span>
+            </button>
+            <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="32pt" height="32pt" viewBox="0 0 32 32" version="1.1">
+                <g id="surface1">
+                    <path class="header__logo"
+                        style=" stroke:none;fill-rule:nonzero;fill:rgb(255,255,255);fill-opacity:1;"
+                        d="M 28.800781 10.601562 L 25.101562 24.398438 L 21.398438 10.601562 L 18.300781 10.601562 L 14.601562 24.398438 L 10.898438 10.601562 L 9 3.601562 L 4.898438 3.601562 L 0.101562 21.398438 L 3.199219 21.398438 L 5.101562 14.5 L 8.800781 14.5 L 10.699219 21.398438 L 12.601562 28.398438 L 16.699219 28.398438 L 19.898438 16.398438 L 23.101562 28.398438 L 27.199219 28.398438 L 32 10.5 L 28.800781 10.5 Z M 5.601562 12.5 L 6.898438 7.601562 L 8.199219 12.5 Z M 5.601562 12.5 " />
+                </g>
+            </svg>
+            <nav class="header__navbar" role="navigation">
+                <ul class="navbar__list ">
+                    <a class="navbar__link" href="/">
+                        <li class="navbar__item ">Home</li>
+                    </a>
+                    <a class="navbar__link" href="/pages/notices.html">
+                        <li class="navbar__item ">Notícias</li>
+                    </a>
+                    <a class="navbar__link" href="/pages/gallery.html">
+                        <li class="navbar__item ">Galeria</li>
+                    </a>
+                    <a class="navbar__link" href="/pages/about.html">
+                        <li class="navbar__item ">Sobre</li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="header__search">
+                <button class="search-button" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <input class="search-input" type="search" aria-labelledby="search-button">
+            </div>
+        </div>
+    </header>
+    <main class="main main--secondary">
+        <section class="resume">
+            <h2 class="resume__section-title section-title section-title--color">About Me</h2>
+            <img class="resume__banner" src="/src/images/resume.jpg" alt="Resume Banner">
+            <div class="box-text">
+                <h2 class="resume__title">Amber Williams</h2>
+                <p class="resume__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                    pulvinar diam sed ipsum consectetur, eget rhoncus orci bibendum. Curabitur turpis eros, lacinia
+                    pharetra
+                    felis sit amet, dapibus bibendum ipsum. Pellentesque at nisl ex. Maecenas egestas, nisi a egestas
+                    pretium, tellus augue congue erat, et condimentum diam ipsum nec tellus. Aenean nec sagittis elit.
+                    Proin
+                    at diam ac est malesuada ultricies. Sed pretium urna nunc, vitae consequat felis varius ut. Fusce
+                    vitae
+                    ipsum odio. Suspendisse tincidunt ante risus, sed eleifend magna fringilla sit amet. Fusce accumsan
+                    pellentesque magna eget aliquam. Nullam a felis sed dolor aliquet tempor. Nam ac tellus finibus,
+                    tempus
+                    dui vel, cursus tortor. Integer sagittis ultrices lorem nec ultrices. Quisque sagittis consequat
+                    egestas.
+                </p>
+            </div>
+            <h2 class="resume__title">General Info</h2>
+            <div class="resume__info">
+                <div class="resume__info-labels">
+                    <label class="resume__info-label" for="name">Full Name</label>
+                    <label class="resume__info-label" for=" nickname">Nickname</label>
+                    <label class="resume__info-label" for=" birth">Date of Birth</label>
+                    <label class="resume__info-label" for=" sign">Star Sign</label>
+                </div>
+                <div class="resume__info-items">
+                    <span class="resume__info-item">Amber Thorn Williams</span>
+                    <span class="resume__info-item">Amber</span>
+                    <span class="resume__info-item">Mar 19, 1996</span>
+                    <span class="resume__info-item">Aries</span>
+                </div>
+            </div>
+        </section>
+        <section class="career">
+            <div class="box-text">
+                <h2 class="resume__title">Career</h2>
+                <p class="resume__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                    pulvinar diam sed ipsum consectetur, eget rhoncus orci bibendum. Curabitur turpis eros, lacinia
+                    pharetra
+                    felis sit amet, dapibus bibendum ipsum. Pellentesque at nisl ex. Maecenas egestas, nisi a egestas
+                    pretium, tellus augue congue erat, et condimentum diam ipsum nec tellus. Aenean nec sagittis elit.
+                    Proin
+                    at diam ac est malesuada ultricies. Sed pretium urna nunc, vitae consequat felis varius
+                    ut.<br><br>Fusce
+                    vitae
+                    ipsum odio. Suspendisse tincidunt ante risus, sed eleifend magna fringilla sit amet. Fusce accumsan
+                    pellentesque magna eget aliquam. Nullam a felis sed dolor aliquet tempor. Nam ac tellus finibus,
+                    tempus
+                    dui vel, cursus tortor. Integer sagittis ultrices lorem nec ultrices. Quisque sagittis consequat
+                    egestas.
+                </p>
+            </div>
+            <img class="career__banner margin-top" src="/src/images/hero-mobile.jpg" alt="Career Banner">
+        </section>
+    </main>
+    <footer class="footer">
+        <span class="footer__content">Amber.com &copy; 2019 - Website By Patrick Oliveira</span>
+    </footer>
+    <!-- Scripts -->
+    <script src="/src/vendor/jquery-1.11.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/0e0d5749fc.js" crossorigin="anonymous"></script>
+    <script src="/src/js/headerFixed.js"></script>
+</body>
+
+</html>

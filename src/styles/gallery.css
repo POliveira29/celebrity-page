@@ -1,0 +1,36 @@
+@import '/src/styles/base/base.css';
+
+
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 4em;
+}
+.gallery{
+    padding-bottom: 10em;
+    background-color: var(--color-second-accent);
+}
+
+.gallery__title{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.js-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.js-gallery__photo{
+    width: 180px;
+    height: auto;
+    margin-right: 0.1rem;
+}
+
+.js-gallery__photo--landscape{
+    width: 362px;
+}

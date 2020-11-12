@@ -1,0 +1,36 @@
+:root {
+  --color-primary: #000;
+  --color-secondary: #77aad4;
+  --color-accent: #a91304;
+  --color-second-accent: #bccddb;
+
+  --font-title:"Domine", serif;;
+  --font-text: "Open Sans", sans-serif;
+
+  --base-space: 1em;
+  --space-md: calc(3.25 * var(--base-space));
+  --space-xlg: calc(5 * var(--base-space));
+}
+body {
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 14px;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button{
+  border: none;
+  background-color: transparent;
+}
+:focus {
+  outline: none;
+}
