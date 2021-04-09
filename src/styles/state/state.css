@@ -14,7 +14,7 @@
     .hero {
         margin-top: 0;
         height: 450px;
-        background: linear-gradient(rgba(0,0,0,0.5),rgb(119 170 212 / 0.3)),url(../images/hero-desktop.jpg) no-repeat center;
+        background: linear-gradient(rgba(0,0,0,0.5),rgb(119 170 212 / 0.3)),url(../../images/hero-desktop.jpg) no-repeat center;
         background-size: cover;
     }
     .container{
